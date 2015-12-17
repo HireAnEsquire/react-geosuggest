@@ -29,6 +29,7 @@ var Geosuggest = _react2['default'].createClass({
       placeholder: 'Search places',
       disabled: false,
       className: '',
+      inputClassName: '',
       location: null,
       radius: null,
       bounds: null,
@@ -359,7 +360,7 @@ var Geosuggest = _react2['default'].createClass({
         { className: 'geosuggest ' + this.props.className,
           onClick: this.onClick },
         _react2['default'].createElement('input', {
-          className: 'geosuggest__input',
+          className: 'geosuggest__input ' + this.props.inputClassName,
           ref: 'geosuggestInput',
           type: 'text',
           value: this.state.userInput,
